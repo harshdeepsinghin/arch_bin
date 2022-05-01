@@ -1,0 +1,7 @@
+#!/bin/bash
+
+S=$(printf '%s' "$*" | sed -e 's/ /+/g')
+
+brave --guest  "https://duckduckgo.com/?q=$S"
+
+clear

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+N=$(printf '%s' "$*")
+
+echo "#!/bin/bash" > $N && kate $N

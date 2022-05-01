@@ -1,0 +1,5 @@
+#!/bin/bash
+
+S=$(printf '%s' "$*" | tr ' ' '+')
+
+brave --guest "https://www.google.com/search?q=How+to+"$S"+in+python"

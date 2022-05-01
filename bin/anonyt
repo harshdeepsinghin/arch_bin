@@ -1,0 +1,5 @@
+#!/bin/bash
+
+S=$(printf '%s' "$*" | sed -e 's/ /+/g')
+
+brave --guest  "https://www.youtube.com/results?search_query=$S"

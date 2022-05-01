@@ -1,0 +1,5 @@
+#!/bin/bash
+
+S=$(printf '%s' "$*" | tr ' ' '+')
+
+brave --guest "https://www.amazon.in/s?k="$S""

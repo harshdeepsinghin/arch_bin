@@ -1,0 +1,5 @@
+#!/bin/bash
+
+LINK="$(xclip -o)"
+echo "Downloading "$LINK""
+yt-dlp "$LINK" -o ~/Downloads/ytdl/"%(title)s.%(ext)s"

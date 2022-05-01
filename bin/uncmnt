@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Select the file by entering it's exact name: ";
+read F_NAME
+
+echo "Enter the exact line you want uncommented: ";
+read line
+
+sed -i "/${line}/ s/# *//" $F_NAME
